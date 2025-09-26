@@ -53,3 +53,13 @@ int main()
     s.getAllSubsets(nums, ans, allSubsets, 0);
     s.printSubsets(allSubsets);
 }
+
+/**
+ * Output
+ [ 1 2 2 ]
+[ 1 2 ]
+[ 1 ]
+[ 2 2 ]
+[ 2 ]
+[ ]
+ */

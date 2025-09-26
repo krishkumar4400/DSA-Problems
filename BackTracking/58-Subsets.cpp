@@ -35,7 +35,7 @@ class Solution {
 };
 
 int main() {
-    vector<int>nums = {1,2,3,4,5};
+    vector<int>nums = {1,2,3};
     vector<int>ans;
     vector<vector<int>>allSubsets;
 
@@ -43,3 +43,16 @@ int main() {
     s.subsets(nums, ans, allSubsets, 0);
     s.printSubsets(allSubsets);
 }
+
+/**
+ Output
+[ 1 2 3 ]
+[ 1 2 ]
+[ 1 3 ]
+[ 1 ]
+[ 2 3 ]
+[ 2 ]
+[ 3 ]
+[ ]
+
+ */
