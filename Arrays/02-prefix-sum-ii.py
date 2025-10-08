@@ -1,6 +1,6 @@
 def prefix(nums):
     for i in range(1, len(nums)):
-        nums[i] = nums[i-1]
+        nums[i] += nums[i-1]
 
     return nums
 
@@ -9,7 +9,8 @@ def rangeSum(nums):
     while(q > 0):
         l = int(input("Enter the value of L: "))
         r = int(input("Enter the value of R: "))
-        if(ans == r):
+        ans = 0
+        if(l == 0):
             ans = nums[r]
         else:
             ans = nums[r] - nums[l-1]
@@ -19,5 +20,8 @@ def rangeSum(nums):
 def main():
     nums = [1,2,3,4,5,6]
     print(nums)
+    nums = prefix(nums)
+    print(nums)
+    rangeSum(nums)
 
 main()

@@ -3,9 +3,8 @@ Given an array of integers of size n answer Q queries where you
 need to print the sum of values in a given range of indices from
 l to r (both includes)
     Note: The of l and r in queries follow 1-based indexing
-
     -> Range Sum Query Problem
-    */
+*/
 
 #include <iostream>
 #include <vector>
