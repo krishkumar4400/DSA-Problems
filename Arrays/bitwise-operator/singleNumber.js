@@ -13,10 +13,19 @@ const singNumber = (nums) => {
     return -1;
 }
 
+const singNumberOptimal = (nums) => {
+    let ans = 0;
+    for(let val of nums) {
+        ans ^= val;
+    }
+    return ans;
+}
+
 function main() {
-    const nums = [4,1,2,1,2];
-    const ans = singNumber(nums);
-    console.log(ans); // 4
+    const nums = [8,1,2,1,2];
+    // const ans = singNumber(nums);
+    const ans = singNumberOptimal(nums);
+    console.log(ans); // 8
 }
 
 main();
