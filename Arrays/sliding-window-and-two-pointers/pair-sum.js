@@ -1,3 +1,4 @@
+// optimal approach two pointers
 const pairSumOptimal = (nums, target) => {
     const ans = [];
     let start = 0;
