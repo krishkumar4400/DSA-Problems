@@ -1,3 +1,17 @@
+// Brute Force approach 
+const pairSum = (nums,target) => {
+    const n = nums.length;
+    const ans = [];
+    for(let i = 0; i < nums; i++) {
+        for(let j = i + 1; j < n; j++) {
+            if(nums[i] + nums[j] === target) {
+                ans.push(i);
+                ans.push(j);
+            }
+        }
+    }
+}
+
 // optimal approach two pointers
 const pairSumOptimal = (nums, target) => {
     const ans = [];
