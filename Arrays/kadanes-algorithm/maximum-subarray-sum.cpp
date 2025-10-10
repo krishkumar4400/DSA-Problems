@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include<limits.h>
 
     using namespace std;
 
@@ -15,7 +16,7 @@
 void maximumSubArraySum(vector<int> nums)
 { // O(n^3)
     int n = nums.size();
-    int maxSum = INT32_MIN;
+    int maxSum = INT_MIN;
     for (int start = 0; start < n; start++)
     {
         for (int end = start; end < n; end++)
