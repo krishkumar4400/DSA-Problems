@@ -2,7 +2,7 @@
 #include<vector>
 #include<algorithm>
 
-int maxArea(vector<int> &height)
+int maxArea(vector<int>heights)
 {
     int n = heights.size();
     int lp = 0;
