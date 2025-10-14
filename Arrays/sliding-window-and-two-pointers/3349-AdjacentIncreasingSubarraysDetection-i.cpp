@@ -33,8 +33,22 @@ bool increasingSubArray(vector<int>&nums, int k) {
     return false;
 }
 
+// improvement
+bool increasingSubArrayDetection(vector<int> &nums, int k)
+{
+    int n = nums.size();
+    for(int st = 0; st + 2*k <= n; st++) {
+       int j = st+k;
+       if (isSorted(st, st + k - 1, nums) && isSorted(j, j+k-1, nums)){
+        return true;
+       }
+    }
+    return false;
+}
+
 int main() {
     vector<int> nums = {2, 5, 7, 8, 9, 2, 3, 4, 3, 1};
     int k = 3;
-    cout << increasingSubArray(nums, k); // 1
+    cout << increasingSubArray(nums, k) << endl; // 1
+    cout << increasingSubArrayDetection(nums, k)<<endl; // 1
 }
