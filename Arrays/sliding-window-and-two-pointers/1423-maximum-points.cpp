@@ -1,3 +1,5 @@
+// Maximum points you can obtain from cards
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -26,8 +28,8 @@ int maximumPoints(vector<int>&nums, int k) {
 }
 
 int main(){
-    vector<int> nums = {1, 2, 3, 4, 5, 6, 1};
-    int k = 3;
+    vector<int> nums = {1,1,1, 2, 3, 4,8, 5, 6, 1, 1, 1};
+    int k = 4;
     int ans = maximumPoints(nums,k);
     cout << ans << endl; // 12
 }
