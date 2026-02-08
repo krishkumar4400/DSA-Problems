@@ -2,7 +2,7 @@
 Problem: Maximum Subarray Sum
 LeetCode: 53
 Pattern: kadane's algorithm - array
-Difficulty: Midium
+Difficulty: Medium
 
 Approach 1: Brute Force - 3 nested loops
 Time: O(n^3)
