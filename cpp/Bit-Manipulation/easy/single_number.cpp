@@ -14,8 +14,8 @@ Space: O(1)
 
 */
 
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 class Solution
@@ -30,10 +30,11 @@ public:
     }
 };
 
-int main() {
-    vector<int>nums = {1,1,2,4,4};
+int main()
+{
+    vector<int> nums = {1, 1, 2, 4, 4};
     Solution s;
     int ans = s.singleNumber(nums);
-    cout<<ans<<endl;
+    cout << ans << endl;
     return 0;
 }
