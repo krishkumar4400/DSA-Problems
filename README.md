@@ -22,7 +22,7 @@ Problems are organized by data structures and algorithmic patterns.
 |------|------|--------|------|
 | Arrays | 0 | 0 | 0 |
 | Strings | 0 | 0 | 0 |
-| Bit Manipulation | 0 | 0 | 0 |
+| Bit Manipulation | 1 | 0 | 0 |
 | DP | 0 | 0 | 0 |
 
 ## 🏆 Platforms
